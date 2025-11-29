@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="description" content="HVAC ინსპექტირების სისტემა - გათბობა-გაგრილების, სავენტილაციო და სახანძრო სისტემების პროფესიონალური შემოწმება">
+    
+    <title>HVAC ინსპექტირების სისტემა</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- html2pdf for PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-white">
+    
+    <!-- Main App Container -->
+    <div id="app-root"></div>
+    
+    <!-- Modal Container -->
+    <div id="modal-root"></div>
+    
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2"></div>
+    
+    <!-- Loading Overlay (optional) -->
+    <div id="loading-overlay" class="fixed inset-0 bg-slate-900/90 flex items-center justify-center z-[100] hidden">
+        <div class="text-center">
+            <div class="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+            <p class="text-white text-lg">იტვირთება...</p>
+        </div>
+    </div>
+    
+    <!-- Main Script -->
+    <script src="script.js"></script>
+    
+</body>
+</html>
